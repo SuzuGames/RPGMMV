@@ -55,7 +55,6 @@ var ad = function ()
     if (var_ad === 3)
     {
 
-        console.log("Entrando en 3")
         var windowObjRef = window.open("https://suzugames.wordpress.com");
 
     };
@@ -63,7 +62,6 @@ var ad = function ()
     if (var_ad === 4)
     {
 
-        console.log("Entrando en 4")
         var windowObjRef = window.open("https://suzugames.wordpress.com");
 
     };
@@ -71,7 +69,6 @@ var ad = function ()
     if (var_ad === 5)
     {
 
-        console.log("Entrando en 5")
         var windowObjRef = window.open("https://suzugames.wordpress.com");
         
     };
