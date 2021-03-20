@@ -3,7 +3,8 @@
  * @plugindesc Allows you to set custom ads in your game.
  * @author SuzuGames | https://suzugames.wordpress.com
  * @desc To edit the plugin you need to open it. There isn't params at the moment.
- * @help When you open the plugin you will find help. If you don't understand something: suzumito7u7@gmail.com
+ * @help When you open the plugin you will find help.
+ * If you don't understand something: suzumito7u7@gmail.com
  *
  * 
  * +------------------------------+
