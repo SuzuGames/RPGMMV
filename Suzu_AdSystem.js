@@ -36,7 +36,6 @@ var ad = function ()
   {
 
     var time = 10; // This is the time until the ad finish IN SECONDS.
-    var time_game = time * 60; // DON'T EDIT THIS.
     var time_script = time * 1000; // DON'T EDIT THIS.
 
     if (var_ad === 1) // From here, you need to set all the numbers you set on line 18 (Default is 5)
@@ -73,8 +72,6 @@ var ad = function ()
         var windowObjRef = window.open("https://suzugames.wordpress.com");
         
     };
-
-    this.wait(time_game);
 
   setTimeout(function(){
 
