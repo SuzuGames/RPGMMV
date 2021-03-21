@@ -4,7 +4,8 @@
  * @author SuzuGames | https://suzugames.wordpress.com
  * @desc To edit the plugin you need to open it. There isn't params at the moment.
  * @help Allows you to set custom ads in your game.
-* If you don't understand something: https://forums.rpgmakerweb.com/index.php?members/suzumito7u7.148841/
+ * Write "ad();" in a script line.
+ * If you don't understand something: https://forums.rpgmakerweb.com/index.php?members/suzumito7u7.148841/
  *
  * 
  * +----------------------------------------------+
@@ -31,10 +32,10 @@ var ad = function ()
   // Example:  Math.floor((Math.random() * 3) + 1);
   // It means that there are 3 ads.
 
-  if (navigator.onLine) // This checks if the player have Internet.
+  if (navigator.onLine) // This checks if the player haves Internet.
   {
 
-    var time = 10; // This is the time until.
+    var time = 10; // This is the time until the ad finish IN SECONDS.
     var time_game = time * 60; // DON'T EDIT THIS.
     var time_script = time * 1000; // DON'T EDIT THIS.
 
@@ -86,7 +87,7 @@ var ad = function ()
     
         // The ad keeps opened. Here you can set the rewards.
 
-        AudioManager.playSe({name: "coin", pan: 0, pitch: 100, volume: 100}); // An audio to give feedback.
+        AudioManager.playSe({name: "Coin", pan: 0, pitch: 100, volume: 100}); // An audio to give feedback.
         var ad_gold = Math.floor((Math.random() * 10) + 1); // Generate random value for gold.
         $gameParty.gainGold(ad_gold); // Give random gold.
         windowObjRef.close(); // Close the ad.
