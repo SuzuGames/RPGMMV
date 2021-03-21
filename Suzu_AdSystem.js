@@ -4,7 +4,7 @@
  * @author SuzuGames | https://suzugames.wordpress.com
  * @desc To edit the plugin you need to open it. There isn't params at the moment.
  * @help Allows you to set custom ads in your game.
- * Write "ad();" in a script line.
+ * Write "ad();" in a script line of any event.
  * If you don't understand something: https://forums.rpgmakerweb.com/index.php?members/suzumito7u7.148841/
  *
  * 
