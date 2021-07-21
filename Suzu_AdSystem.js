@@ -3,6 +3,17 @@
  * @plugindesc When you open the plugin you will find help.
  * @author SuzuGames | https://suzugames.wordpress.com
  * @desc To edit the plugin you need to open it. There isn't params at the moment.
+ * 
+ * @param Total ads
+ * @type number
+ * @max 100
+ * @desc A descrtion for a parameter for my plugin.
+ * @default 5
+ *
+ * @param Time
+ * @type number
+ * @desc Time until the ad will remove (seconds)
+ * @default 10
  * @help Allows you to set custom ads in your game.
  * Write "ad();" in a script line of any event.
  * If you don't understand something: https://forums.rpgmakerweb.com/index.php?members/suzumito7u7.148841/
@@ -24,6 +35,10 @@
 
 
 var params = PluginManager.parameters("Suzu_AdSystem");
+const PluginPatternParams = {
+    Ads: Number(parameters['Total ads']),
+    Time: Number(parameters['Time'])
+  };
 
 var ad = function ()
 {
@@ -35,7 +50,7 @@ var ad = function ()
   if (navigator.onLine) // This checks if the player haves Internet.
   {
 
-    var time = 10; // This is the time until the ad finish IN SECONDS.
+    var time = PluginPatternParams.Ads; // This is the time until the ad finish IN SECONDS.
     var time_script = time * 1000; // DON'T EDIT THIS.
 
     if (var_ad === 1) // From here, you need to set all the numbers you set on line 18 (Default is 5)
